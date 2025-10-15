@@ -4,6 +4,8 @@ from sqlalchemy.orm import relationship
 
 class User(Base):
 
+    __tablename__ = "users"
+
     id = Column(Integer, primary_key=True, autoincrement=True, index=True)
     nome = Column(String(70), nullable=False)
     email = Column(String(100), nullable=False)
